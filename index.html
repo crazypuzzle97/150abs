@@ -1,31 +1,323 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>150 Abs: Daily Abs Challenge</title>
-<meta name="description" content="5 minutes of abs a day, with friends. Keep your streak, climb the ranking, build a crew.">
-<meta property="og:title" content="150 Abs: Daily Abs Challenge"><meta property="og:description" content="5 minutes of abs a day, with friends."><meta property="og:image" content="img/1_today.jpg">
-<link rel="icon" href="img/icon.png"><link rel="apple-touch-icon" href="img/icon.png"><link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>150 Abs: 5-minute daily abs challenge with friends</title>
+<meta name="description" content="150 abs a day in 5 minutes. A guided daily abs challenge for iPhone with streaks, a friends ranking, a weekly league, duels and crews of up to 6.">
+<meta name="apple-itunes-app" content="app-id=6832132004">
+<meta name="theme-color" content="#FF4A1C">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="./">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="150 Abs">
+<meta property="og:title" content="150 Abs: 5 minutes a day, better together">
+<meta property="og:description" content="A guided 5-minute abs challenge with streaks, a friends ranking, duels and crews. Free on iPhone.">
+<meta property="og:image" content="https://crazypuzzle97.github.io/150abs/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="150 Abs: 150 abs a day, 5 minutes, with friends">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="150 Abs: 5 minutes a day, better together">
+<meta name="twitter:description" content="A guided 5-minute abs challenge with streaks, a friends ranking, duels and crews. Free on iPhone.">
+<meta name="twitter:image" content="https://crazypuzzle97.github.io/150abs/img/og.jpg">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
 <body>
-<header class="hero"><div class="wrap">
-<nav><a class="brand" href="./"><img src="img/icon.png" alt="">150 Abs</a><div class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div></nav>
-<h1>150 abs<br>a day.</h1>
-<p class="lead">5 minutes. Every day. Better together. A guided daily abs challenge with streaks, a friends ranking, duels and crews.</p>
-<a class="cta" href="https://apps.apple.com/app/id6832132004">Download on the App Store<small>Free · iPhone</small></a>
-</div></header>
-<div class="shots">
-<img src="img/1_today.jpg" alt="Today's mission: 78 reps, 5 exercises, about 6 minutes">
-<img src="img/2_workout.jpg" alt="Guided workout with an animated exercise and rep counter">
-<img src="img/3_ranking.jpg" alt="Friends ranking with weekly league">
-<img src="img/6_progress.jpg" alt="Progress: streak, points and the 30-day trail">
-</div>
-<main class="wrap">
-<section><h2>Small enough to do every day</h2><div class="grid">
-<div class="card"><div class="ico">🔥</div><h3>5-minute workouts</h3><p>One guided session a day, no equipment. Beginner, Intermediate or Pro — 150 reps.</p></div>
-<div class="card"><div class="ico">📈</div><h3>A program that adapts</h3><p>30 days of full, light, mobility and rest days. Too easy or too hard? Tomorrow adjusts.</p></div>
-<div class="card"><div class="ico">🏆</div><h3>Friends &amp; rankings</h3><p>Points, streaks, total abs and consistency. A weekly league and seasonal challenges.</p></div>
-<div class="card"><div class="ico">🤝</div><h3>Duels &amp; crews</h3><p>Challenge a friend, or build a crew of up to 6 with one shared streak.</p></div>
-<div class="card"><div class="ico">📸</div><h3>See your progress</h3><p>Private progress photos, before/after compare, charts and Apple Health.</p></div>
-<div class="card"><div class="ico">☁️</div><h3>Never lose a day</h3><p>Your progress backs up to your own private iCloud. A new iPhone brings it all back.</p></div>
-</div></section>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 2.5c.6 3.2 4.8 5.4 4.8 10.4A4.8 4.8 0 0 1 12 17.7a4.8 4.8 0 0 1-4.8-4.8c0-2.2 1.2-3.7 2.3-4.7.2 1.6 1 2.6 2.2 3 .1-3.4-.8-5.9.3-8.7Z"/><path d="M6 21h12"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8"/><path d="M14 7h7v7"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1 7.8 7.7 7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.3A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7ZM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7Z"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24"><path d="m3 7 4.5 4L12 4l4.5 7L21 7l-2 12H5L3 7Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></symbol>
+</svg>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="150 Abs home"><img src="img/icon.png" alt="" width="34" height="34">150 Abs</a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="hide-m" href="#how">How it works</a>
+      <a class="hide-m" href="#features">Features</a>
+      <a class="hide-m" href="#invite">Invite &amp; earn</a>
+      <a class="hide-m" href="#plus">Plus</a>
+      <a href="support.html">Support</a>
+      <a class="btn-sm" href="https://apps.apple.com/app/id6832132004">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">5 minutes · Every day<span class="hide-xs"> · Better together</span></span>
+        <h1 id="hero-title">150 abs<br>a day.</h1>
+        <p class="lead">A guided 5-minute abs challenge you do with friends. Keep your streak, climb the weekly league, duel a friend or build a crew.</p>
+        <div class="ctas">
+          <a class="btn btn-white" href="https://apps.apple.com/app/id6832132004">
+            <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+            <span class="stack">Download on the App Store<span class="sub">Free · iPhone</span></span>
+          </a>
+          <a class="link-light" href="#how">See how it works <svg class="ico" style="width:18px;height:18px" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <p class="fine">
+          <span><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>No equipment</span>
+          <span><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>No sign-up form</span>
+          <span><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Works offline</span>
+        </p>
+      </div>
+      <div class="phones" role="img" aria-label="Three iPhone screens from 150 Abs: today's mission of 78 reps, the friends ranking, and the 30-day progress trail">
+        <div class="phone p2"><img src="img/3_ranking.jpg" alt="" width="414" height="900"></div>
+        <div class="phone p3"><img src="img/6_progress.jpg" alt="" width="414" height="900"></div>
+        <div class="phone p1"><img src="img/1_today.jpg" alt="" width="414" height="900" fetchpriority="high"></div>
+        <div class="chip c1" aria-hidden="true"><span class="dot"><svg class="ico"><use href="#i-flame"/></svg></span><span><b>11-day streak</b><small>Don't break the chain</small></span></div>
+        <div class="chip c2" aria-hidden="true"><span class="dot"><svg class="ico"><use href="#i-trophy"/></svg></span><span><b>#1 this week</b><small>Weekly league</small></span></div>
+        <div class="chip c3" aria-hidden="true"><span class="dot"><svg class="ico"><use href="#i-bolt"/></svg></span><span><b>Duel won</b><small>Duo streak 5</small></span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats" role="list" aria-label="150 Abs at a glance">
+    <div class="stat" role="listitem"><b>5 min</b><span>a day</span></div>
+    <div class="stat" role="listitem"><b>150</b><span>reps to work up to</span></div>
+    <div class="stat" role="listitem"><b>30</b><span>day adaptive program</span></div>
+    <div class="stat" role="listitem"><b>6</b><span>friends per crew</span></div>
+  </div>
+
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap how">
+      <div>
+        <div class="section-head reveal">
+          <span class="kicker">How it works</span>
+          <h2 id="how-title">Small enough to do <span class="grad">every single day.</span></h2>
+          <p>One guided session a day. No plan to build, no gym, no excuses. Just open the app and press Start.</p>
+        </div>
+        <ol class="steps">
+          <li class="card reveal"><span class="num" aria-hidden="true">1</span><div><h3>Pick your level</h3><p>Beginner, Intermediate or Pro. Setup takes about 30 seconds and there's no account form.</p></div></li>
+          <li class="card reveal"><span class="num" aria-hidden="true">2</span><div><h3>Do your 5 minutes</h3><p>Animated exercises, a rep counter, hold timers and short rests guide you through it. No equipment needed.</p></div></li>
+          <li class="card reveal"><span class="num" aria-hidden="true">3</span><div><h3>Keep the streak, together</h3><p>Check in, earn points and climb the ranking with your friends. Tomorrow adjusts to how today felt.</p></div></li>
+        </ol>
+        <div class="levels" role="list" aria-label="Levels">
+          <div class="level card reveal" role="listitem"><span class="tag">Beginner</span><b>100<small>reps on Day 30</small></b><p>Short, doable sets that grow a little every week.</p></div>
+          <div class="level card reveal" role="listitem"><span class="tag">Intermediate</span><b>150<small>reps on Day 30</small></b><p>A solid daily mix that builds to the full 150.</p></div>
+          <div class="level card pro reveal" role="listitem"><span class="tag">Pro</span><b>150<small>reps a day</small></b><p>The full 150 on every full day. Holds keep getting longer.</p></div>
+        </div>
+      </div>
+      <div class="how-phone reveal">
+        <div class="phone"><img src="img/2_workout.jpg" alt="Workout screen: Bicycle Crunch, exercise 1 of 5, with an animated figure and a ring counting 26 reps" width="414" height="900" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens" aria-labelledby="screens-title">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="kicker">Inside the app</span>
+        <h2 id="screens-title">Everything for today, <span class="grad">on one screen.</span></h2>
+      </div>
+    </div>
+    <div class="gallery" tabindex="0" role="region" aria-label="App screenshots, scroll horizontally">
+      <figure><div class="phone"><img src="img/1_today.jpg" alt="Today screen: Day 12 of 30, an 11-day streak and today's mission of 78 reps across 5 exercises, about 6 minutes" width="414" height="900" loading="lazy"></div><figcaption><b>Today's mission</b><span>Your reps, your exercises, one Start button.</span></figcaption></figure>
+      <figure><div class="phone"><img src="img/2_workout.jpg" alt="Guided workout: Bicycle Crunch with a 26-rep counter ring and a Done button" width="414" height="900" loading="lazy"></div><figcaption><b>Guided workout</b><span>Animated moves, tap-to-count reps, rest timer.</span></figcaption></figure>
+      <figure><div class="phone"><img src="img/3_ranking.jpg" alt="Social tab: your rank Grinder with 1,380 points, a friend code and this week's league with Jordan in first place" width="414" height="900" loading="lazy"></div><figcaption><b>Friends ranking</b><span>Points, streaks, reps and a weekly league.</span></figcaption></figure>
+      <figure><div class="phone"><img src="img/6_progress.jpg" alt="Progress screen: day 11 of 30, streak 11, 509 reps, 42 minutes and a winding 30-day trail" width="414" height="900" loading="lazy"></div><figcaption><b>Your trail</b><span>Streaks, totals and a 30-day map of the challenge.</span></figcaption></figure>
+      <figure><div class="phone"><img src="img/5_invite.jpg" alt="Onboarding screen titled Got an invite code? that offers 20% off 150 Abs Plus with a friend's code" width="600" height="1304" loading="lazy"></div><figcaption><b>Invite a friend</b><span>Their code saves them 20% on Plus.</span></figcaption></figure>
+      <figure><div class="phone"><img src="img/7_plus.jpg" alt="150 Abs Plus screen: Go all in, with every program, streak protection, the full ranking and before and after photos" width="600" height="1304" loading="lazy"></div><figcaption><b>150 Abs Plus</b><span>Every program and the full social game.</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Features</span>
+        <h2 id="features-title">Built to bring you <span class="grad">back tomorrow.</span></h2>
+        <p>A program that adapts, a streak worth protecting and friends who notice when you skip.</p>
+      </div>
+      <div class="bento">
+        <article class="feat card hl wide reveal">
+          <span class="fi" aria-hidden="true"><svg class="ico"><use href="#i-trend"/></svg></span>
+          <h3>An adaptive 30-day program</h3>
+          <p>Full, light, mobility and rest days in a weekly rhythm, building to a Day 30 Finale. Tap Too easy, Just right or Too hard after each session and tomorrow adjusts.</p>
+          <div class="rhythm" aria-label="Weekly rhythm"><span>Full</span><span>Light</span><span>Full</span><span>Mobility</span><span>Full</span><span>Mini</span><span>Rest</span></div>
+        </article>
+        <article class="feat card wide reveal">
+          <span class="fi" aria-hidden="true"><svg class="ico"><use href="#i-flame"/></svg></span>
+          <h3>Streaks that forgive</h3>
+          <p>Missed yesterday? A short make-up session earns it back once a week. Streak Shields and Plus freezes cover the days life gets in the way.</p>
+          <div class="week" role="img" aria-label="Example week: five days trained, Thursday earned back with a make-up session, Sunday still to do">
+            <span class="d done">M</span><span class="d done">T</span><span class="d done">W</span><span class="d saved">T</span><span class="d done">F</span><span class="d done">S</span><span class="d today">S</span>
+          </div>
+        </article>
+        <article class="feat card reveal">
+          <span class="fi" aria-hidden="true"><svg class="ico"><use href="#i-trophy"/></svg></span>
+          <h3>Friends ranking</h3>
+          <p>Points, streaks, total abs and consistency, plus a weekly league that resets every Monday.</p>
+        </article>
+        <article class="feat card reveal">
+          <span class="fi" aria-hidden="true"><svg class="ico"><use href="#i-bolt"/></svg></span>
+          <h3>Duels</h3>
+          <p>Challenge a friend with a link or code. Both finish today and your duo streak grows.</p>
+        </article>
+        <article class="feat card reveal">
+          <span class="fi" aria-hidden="true"><svg class="ico"><use href="#i-users"/></svg></span>
+          <h3>Crews of up to 6</h3>
+          <p>One shared streak and a weekly reps board for your group chat, team or family.</p>
+        </article>
+        <article class="feat card reveal">
+          <span class="fi" aria-hidden="true"><svg class="ico"><use href="#i-camera"/></svg></span>
+          <h3>Progress photos</h3>
+          <p>Private, on your iPhone. Drag to compare before and after, next to your charts.</p>
+        </article>
+        <article class="feat card wide reveal">
+          <span class="fi" aria-hidden="true"><svg class="ico"><use href="#i-heart"/></svg></span>
+          <h3>Apple Health</h3>
+          <p>Turn it on and every finished session is logged as a Core Training workout. The app only writes to Health; it never reads your data.</p>
+        </article>
+        <article class="feat card wide reveal">
+          <span class="fi" aria-hidden="true"><svg class="ico"><use href="#i-cloud"/></svg></span>
+          <h3>iCloud backup</h3>
+          <p>Your progress backs up to your own private iCloud. Reinstall or get a new iPhone and tap Restore my progress: streak, history, friends and crews come back.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="invite" aria-labelledby="invite-title">
+    <div class="wrap">
+      <div class="earn reveal">
+        <div>
+          <span class="kicker">Invite &amp; earn</span>
+          <h2 id="invite-title">Friends save 20%.<br>You earn 25%.</h2>
+          <p class="lede">Your friend code is also your invite code. Share it, and everyone who joins with it gets 150 Abs Plus for less, while you earn a share of what they pay.</p>
+          <div class="earn-cards">
+            <div><b class="g">20%</b><span>off Plus for friends who join with your code</span></div>
+            <div><b class="g">25%</b><span>of what they pay goes to you, renewals included</span></div>
+          </div>
+          <ol>
+            <li><span><b>Share your code</b> from Settings → Invite friends &amp; earn, or send your invite link.</span></li>
+            <li><span><b>They type it</b> on the “Got an invite code?” screen when they sign up and unlock 20% off Plus.</span></li>
+            <li><span><b>You earn</b> 25% of every payment they make. Request a payout once your balance reaches US$10.</span></li>
+          </ol>
+          <a class="terms-link" href="terms.html#referral">Read the referral program terms →</a>
+        </div>
+        <div class="phone"><img src="img/5_invite.jpg" alt="The Got an invite code? screen where a friend enters your code for 20% off Plus" width="600" height="1304" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plus" aria-labelledby="plus-title">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="kicker">150 Abs Plus</span>
+        <h2 id="plus-title">Free to start. <span class="grad">Go all in</span> when you're ready.</h2>
+        <p>The full 30-day program is free forever. Plus adds every program, streak protection and the full social game.</p>
+      </div>
+      <div class="plans">
+        <div class="plan card best reveal">
+          <span class="badge">Best value</span>
+          <h3>Annual</h3>
+          <p class="price">$24.99<small>/ year</small></p>
+          <p class="note">About $2.08 a month</p>
+          <span class="trial"><svg class="ico" aria-hidden="true"><use href="#i-gift"/></svg>7-day free trial</span>
+        </div>
+        <div class="plan card reveal">
+          <h3>Monthly</h3>
+          <p class="price">$4.99<small>/ month</small></p>
+          <p class="note">Cancel any time</p>
+        </div>
+        <div class="plan card reveal">
+          <h3>Lifetime</h3>
+          <p class="price">$39.99<small>once</small></p>
+          <p class="note">Pay once, keep Plus forever</p>
+        </div>
+      </div>
+      <div class="plus-wrap">
+        <div class="plus-list card reveal">
+          <h3><svg class="ico" style="color:var(--ember-text)" aria-hidden="true"><use href="#i-crown"/></svg>Plus adds</h3>
+          <ul>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Focus programs: Obliques, Lower Abs and Plank Mastery</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>2 automatic streak freezes every month</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Every leaderboard: all-time, streak and consistency</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>30 and 90-day charts, before/after photo compare</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Unlimited duels and creating your own crews</li>
+          </ul>
+        </div>
+        <div class="plus-list free card reveal">
+          <h3>Always free</h3>
+          <ul>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>The full 30-day Classic program, every level</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Streaks, plus one free make-up session a week</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>The weekly league with your friends</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>2 duels at a time, joining crews, the community feed</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>No banner or pop-up ads</li>
+          </ul>
+        </div>
+      </div>
+      <p class="fineprint">Prices shown in US dollars; prices may vary by country and are always shown in the app before you buy. With a friend's invite code, Plus is 20% off. Payment is charged to your Apple ID. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the period. See the <a href="terms.html">Terms of Use</a>.</p>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="kicker">FAQ</span>
+        <h2 id="faq-title">Good questions.</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Is 150 Abs free?</summary><p>Yes. The full 30-day program, streaks, the weekly league, duels, crews and the community feed are free. 150 Abs Plus is optional and adds focus programs, streak freezes, every leaderboard, longer charts, before/after compare, unlimited duels and creating crews.</p></details>
+        <details><summary>I've never trained abs. Can I do this?</summary><p>Yes. Start at Beginner: sets are short and grow a little every week, and every exercise has a “How to” with an easier variation. If a day feels too hard, say so after the session and tomorrow gets lighter. 150 Abs is general fitness content, not medical advice, so check with a doctor first if you're pregnant, postpartum, injured or have a medical condition, and stop any exercise that hurts.</p></details>
+        <details><summary>Do I need equipment or an account?</summary><p>No equipment, just a bit of floor. There's no email or password either: the app works offline, and friends, duels and crews use your iCloud account behind the scenes.</p></details>
+        <details><summary>What happens if I miss a day?</summary><p>Missed just yesterday? A short make-up session today earns it back for free, once a week. A Streak Shield or a Plus freeze covers missed days automatically.</p></details>
+        <details><summary>How do duels and crews work?</summary><p>A duel is you and one friend: each of you does your own level's workout, and when you both finish the same day, your duo streak grows. A crew is up to 6 people sharing one streak and a weekly reps board. Invite with a link or a 6-character code.</p></details>
+        <details><summary>How does Invite &amp; earn work?</summary><p>Friends who join with your code get 20% off Plus. When they pay for a purchase in the app, you earn 25% of what they paid, renewals included. Payouts are made on request once your balance reaches US$10. The full rules are in the <a href="terms.html#referral">referral program terms</a>.</p></details>
+        <details><summary>I got a new iPhone. Is my progress gone?</summary><p>No. Sign into the same iCloud account, install 150 Abs and tap <b>Restore my progress</b> on the welcome screen. Your streak, history, friends, crews and duels come back.</p></details>
+        <details><summary>How do I cancel my subscription?</summary><p>In iPhone Settings → Apple ID → Subscriptions → 150 Abs Plus, or in the app under Settings → Manage subscription. Cancel at least 24 hours before renewal (or before your free trial ends) to avoid being charged.</p></details>
+        <details><summary>What do you do with my data?</summary><p>As little as possible. The app shows no ads and never tracks you across other apps or websites, and this website has no analytics, trackers or cookies. Progress photos stay private, and Health data is never sent to us. You can delete everything from Settings → Delete all my data. Read the <a href="privacy.html">Privacy Policy</a>.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="final reveal">
+      <img src="img/icon.png" alt="" width="88" height="88" loading="lazy">
+      <h2>Your 5 minutes start today.</h2>
+      <p>Grab a friend, pick your level and start the streak.</p>
+      <a class="btn btn-white" href="https://apps.apple.com/app/id6832132004">
+        <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+        <span class="stack">Download on the App Store<span class="sub">Free · iPhone</span></span>
+      </a>
+    </div>
+  </div>
 </main>
-<footer class="wrap"><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><br><br>© 2026 Niccolo Valenti · <a href="mailto:abs.app@gmail.com">abs.app@gmail.com</a></footer>
-</body></html>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/icon.png" alt="" width="28" height="28" loading="lazy">150 Abs</a>
+    <nav aria-label="Footer">
+      <a href="https://apps.apple.com/app/id6832132004">App Store</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="terms.html#referral">Referral terms</a>
+    </nav>
+    <p class="copy">© 2026 Niccolo Valenti · <a href="mailto:abs.app@gmail.com">abs.app@gmail.com</a></p>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

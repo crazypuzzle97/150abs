@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["6R5RA28B8Y.com.nickvalenti.abs150"],
+        "components": [
+          { "/": "/friend/*", "comment": "Friend invites open in the app" },
+          { "/": "/duel/*", "comment": "Duel invites open in the app" },
+          { "/": "/crew/*", "comment": "Crew invites open in the app" }
+        ]
+      }
+    ]
+  }
+}

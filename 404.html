@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found · 150 Abs</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FF4A1C">
+<meta name="color-scheme" content="light dark">
+<script>
+  // GitHub Pages has no rewrites, so invite links like /150abs/friend/ABC234 land here.
+  // Send them to the matching invite page with ?code=. (Cloudflare Pages handles these in _redirects.)
+  (function () {
+    var m = window.location.pathname.match(/^(.*?)\/(friend|duel|crew)\/([^\/]+)\/?$/i);
+    if (m && !/\.html?$/i.test(m[3])) {
+      var code = decodeURIComponent(m[3]).toUpperCase().replace(/[^A-Z0-9]/g, '');
+      if (code) {
+        window.location.replace(m[1] + '/' + m[2].toLowerCase() + '/?code=' + encodeURIComponent(code));
+      }
+    }
+  })();
+</script>
+<style>
+  /* Self-contained: this page can be served at any depth, so it can't rely on relative asset paths. */
+  :root{color-scheme:light dark;--bg:#F4F3EF;--surface:#fff;--text:#111113;--muted:#5E5E63;--stroke:rgba(0,0,0,.07)}
+  @media (prefers-color-scheme:dark){:root{--bg:#0B0B0D;--surface:#17171B;--text:#F4F4F5;--muted:#A1A1A8;--stroke:rgba(255,255,255,.08)}}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:24px;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,system-ui,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  main{width:100%;max-width:520px;text-align:center}
+  .hero{position:relative;overflow:hidden;border-radius:32px;padding:56px 24px 48px;color:#fff;background:linear-gradient(135deg,#FF9500 0%,#FF4A1C 46%,#E8173A 100%)}
+  .hero > *{position:relative;z-index:1}
+  .hero::after{content:"404";position:absolute;right:-6px;bottom:-46px;font:900 150px/1 -apple-system,system-ui,sans-serif;letter-spacing:-.06em;color:rgba(255,255,255,.08)}
+  .logo{width:72px;height:72px;margin:0 auto 22px;border-radius:20px;display:grid;place-items:center;background:rgba(255,255,255,.18);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3);font:900 24px/1 -apple-system,system-ui,sans-serif;letter-spacing:-.04em}
+  h1{margin:0 0 10px;font-size:44px;line-height:1;letter-spacing:-.04em;font-weight:900}
+  .hero p{margin:0;font-size:18px;font-weight:600}
+  .actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
+  a.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:999px;font-weight:800;text-decoration:none}
+  .primary{background:linear-gradient(135deg,#FF9500,#FF4A1C 46%,#E8173A);color:#fff}
+  .secondary{background:var(--surface);color:var(--text);border:1px solid var(--stroke)}
+  a:focus-visible{outline:3px solid #FF4A1C;outline-offset:3px}
+  .foot{margin-top:22px;color:var(--muted);font-size:14px}
+  .foot a{color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <div class="logo" aria-hidden="true">150</div>
+    <h1>Page not found</h1>
+    <p>This page skipped today's workout. Let's get you back on track.</p>
+  </div>
+  <div class="actions">
+    <a class="btn primary" id="home" href="/">Back to 150 Abs</a>
+    <a class="btn secondary" href="https://apps.apple.com/app/id6832132004">Get the app</a>
+  </div>
+  <p class="foot">Need help? <a href="mailto:abs.app@gmail.com">abs.app@gmail.com</a></p>
+</main>
+<script>
+  // Point "Back to 150 Abs" at the site root: "/150abs/" on GitHub Pages, "/" on a custom domain.
+  (function () {
+    var home = '/';
+    if (/\.github\.io$/i.test(window.location.hostname)) {
+      var first = window.location.pathname.split('/').filter(Boolean)[0];
+      if (first) home = '/' + first + '/';
+    }
+    document.getElementById('home').setAttribute('href', home);
+  })();
+</script>
+</body>
+</html>

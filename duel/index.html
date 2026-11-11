@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>You've been challenged to a duel · 150 Abs</title>
+<meta name="description" content="A friend challenged you to a 150 Abs duel: 5 minutes of abs a day, together.">
+<meta name="apple-itunes-app" content="app-id=6832132004">
+<meta name="theme-color" content="#FF4A1C">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="150 Abs">
+<meta property="og:title" content="You've been challenged to a duel">
+<meta property="og:description" content="A friend challenged you to a 150 Abs duel: 5 minutes of abs a day, together.">
+<meta property="og:image" content="https://crazypuzzle97.github.io/150abs/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+  // /friend/ABC234/ (trailing slash) would break the relative asset paths below; drop the slash.
+  (function () { var m = location.pathname.match(/^(.*\/(?:friend|duel|crew)\/[^\/]+)\/$/i); if (m) location.replace(m[1] + location.search); })();
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="invite-body" data-kind="duel">
+<main>
+  <div class="invite-top">
+    <div class="invite-wrap">
+      <div class="bar"><a class="brand" href="../" aria-label="150 Abs home"><img src="../img/icon.png" alt="" width="34" height="34">150 Abs</a></div>
+      <div class="invite-head">
+        <div class="badge-ico" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></div>
+        <span class="eyebrow">Duel challenge</span>
+        <h1>You've been challenged to a&nbsp;duel</h1>
+        <p>5 minutes of abs a day, together. Each of you does your own level's workout. When you both finish, your duo streak grows.</p>
+      </div>
+    </div>
+  </div>
+  <div class="invite-wrap">
+    <div class="invite-card card">
+      <p class="label" id="code-label">Duel code</p>
+      <div class="code-row">
+        <output class="code missing" id="code" aria-labelledby="code-label">······</output>
+        <button class="copy-btn" id="copy" type="button" aria-label="Copy code"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+      </div>
+      <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      <p class="warn" id="warn" hidden>This link is missing its code. Ask your friend to send it again, or type their 6-character code in the app.</p>
+      <a class="btn btn-hero" id="open" href="abs150://duel">Open in 150 Abs</a>
+      <div class="or">New to 150 Abs?</div>
+      <a class="btn btn-ghost" href="https://apps.apple.com/app/id6832132004">Download on the App Store</a>
+      <ol class="howto"><li><span class="n" aria-hidden="true">1</span><span><b>Get 150 Abs</b> from the App Store. It's free.</span></li><li><span class="n" aria-hidden="true">2</span><span><b>Open the Today tab</b>, tap <b>+</b> next to Duels, then <b>Enter a code</b>.</span></li><li><span class="n" aria-hidden="true">3</span><span><b>Type the code above</b> to accept the duel.</span></li></ol>
+      <p class="invite-note">Duels use iCloud, so make sure you're signed into iCloud on your iPhone.</p>
+    </div>
+    <div class="invite-why"><div class="card"><b>2</b><span>players</span></div><div class="card"><b>5 min</b><span>a day</span></div><div class="card"><b>1</b><span>duo streak</span></div></div>
+  </div>
+</main>
+<footer class="invite-foot">
+  <a href="../">150 Abs</a><a href="../support.html">Support</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a>
+</footer>
+<script src="../invite.js"></script>
+</body>
+</html>

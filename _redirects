@@ -1,0 +1,13 @@
+# Cloudflare Pages rewrites (GitHub Pages ignores this file and uses 404.html instead).
+#
+# Invite links: /friend/ABC234, /duel/ABC234, /crew/ABC234 all serve the matching page,
+# which reads the code from the URL. The target must be the folder ("/friend/"), not
+# "/friend/index.html": Pages 308-redirects *.html and index.html URLs to their pretty
+# form, which turns a ".../index.html 200" rewrite into a 404.
+/friend/*   /friend/   200
+/duel/*     /duel/     200
+/crew/*     /crew/     200
+
+# /privacy, /terms and /support need no rule: Pages already serves privacy.html at
+# /privacy (and redirects /privacy.html there). Adding "/privacy /privacy.html 200"
+# creates an infinite redirect loop, so those rules are intentionally left out.
