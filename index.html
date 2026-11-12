@@ -42,6 +42,7 @@
   <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
   <symbol id="i-gift" viewBox="0 0 24 24"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7ZM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7Z"/></symbol>
   <symbol id="i-crown" viewBox="0 0 24 24"><path d="m3 7 4.5 4L12 4l4.5 7L21 7l-2 12H5L3 7Z"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></symbol>
 </svg>
@@ -51,11 +52,24 @@
     <a class="brand" href="./" aria-label="150 Abs home"><img src="img/icon.png" alt="" width="34" height="34">150 Abs</a>
     <nav class="nav-links" aria-label="Main">
       <a class="hide-m" href="#how">How it works</a>
+      <a class="hide-m" href="#screens">Screens</a>
       <a class="hide-m" href="#features">Features</a>
       <a class="hide-m" href="#invite">Invite &amp; earn</a>
       <a class="hide-m" href="#plus">Plus</a>
-      <a href="support.html">Support</a>
+      <a class="hide-m" href="#faq">FAQ</a>
       <a class="btn-sm" href="https://apps.apple.com/app/id6832132004">Get the app</a>
+      <details class="menu">
+        <summary aria-label="Menu"><span></span><span></span><span></span></summary>
+        <div class="menu-panel">
+          <a href="#how">How it works</a>
+          <a href="#screens">Screens</a>
+          <a href="#features">Features</a>
+          <a href="#invite">Invite &amp; earn</a>
+          <a href="#plus">Plus</a>
+          <a href="#faq">FAQ</a>
+          <a href="support.html">Support</a>
+        </div>
+      </details>
     </nav>
   </div>
 </header>
@@ -81,11 +95,11 @@
         </p>
       </div>
       <div class="phones" role="img" aria-label="Three iPhone screens from 150 Abs: today's mission of 78 reps, the friends ranking, and the 30-day progress trail">
-        <div class="phone p2"><img src="img/3_ranking.jpg" alt="" width="414" height="900"></div>
-        <div class="phone p3"><img src="img/6_progress.jpg" alt="" width="414" height="900"></div>
-        <div class="phone p1"><img src="img/1_today.jpg" alt="" width="414" height="900" fetchpriority="high"></div>
+        <div class="phone p2"><img src="img/3_ranking.jpg" alt="" width="600" height="1304"></div>
+        <div class="phone p3"><img src="img/6_progress.jpg" alt="" width="600" height="1304"></div>
+        <div class="phone p1"><img src="img/1_today.jpg" alt="" width="600" height="1304" fetchpriority="high"></div>
         <div class="chip c1" aria-hidden="true"><span class="dot"><svg class="ico"><use href="#i-flame"/></svg></span><span><b>11-day streak</b><small>Don't break the chain</small></span></div>
-        <div class="chip c2" aria-hidden="true"><span class="dot"><svg class="ico"><use href="#i-trophy"/></svg></span><span><b>#1 this week</b><small>Weekly league</small></span></div>
+        <div class="chip c2" aria-hidden="true"><span class="dot"><svg class="ico"><use href="#i-trophy"/></svg></span><span><b>Weekly league</b><small>Beat your friends</small></span></div>
         <div class="chip c3" aria-hidden="true"><span class="dot"><svg class="ico"><use href="#i-bolt"/></svg></span><span><b>Duel won</b><small>Duo streak 5</small></span></div>
       </div>
     </div>
@@ -118,7 +132,7 @@
         </div>
       </div>
       <div class="how-phone reveal">
-        <div class="phone"><img src="img/2_workout.jpg" alt="Workout screen: Bicycle Crunch, exercise 1 of 5, with an animated figure and a ring counting 26 reps" width="414" height="900" loading="lazy"></div>
+        <div class="phone"><img src="img/2_workout.jpg" alt="Workout screen: Bicycle Crunch, exercise 1 of 5, with an animated figure and a ring counting 26 reps" width="600" height="1304" loading="lazy"></div>
       </div>
     </div>
   </section>
@@ -127,16 +141,26 @@
     <div class="wrap">
       <div class="section-head center reveal">
         <span class="kicker">Inside the app</span>
-        <h2 id="screens-title">Everything for today, <span class="grad">on one screen.</span></h2>
+        <h2 id="screens-title">Simple screens. <span class="grad">Serious streaks.</span></h2>
+        <p>Nine screens, one habit. Swipe or use the arrows to take the tour.</p>
       </div>
     </div>
-    <div class="gallery" tabindex="0" role="region" aria-label="App screenshots, scroll horizontally">
-      <figure><div class="phone"><img src="img/1_today.jpg" alt="Today screen: Day 12 of 30, an 11-day streak and today's mission of 78 reps across 5 exercises, about 6 minutes" width="414" height="900" loading="lazy"></div><figcaption><b>Today's mission</b><span>Your reps, your exercises, one Start button.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/2_workout.jpg" alt="Guided workout: Bicycle Crunch with a 26-rep counter ring and a Done button" width="414" height="900" loading="lazy"></div><figcaption><b>Guided workout</b><span>Animated moves, tap-to-count reps, rest timer.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/3_ranking.jpg" alt="Social tab: your rank Grinder with 1,380 points, a friend code and this week's league with Jordan in first place" width="414" height="900" loading="lazy"></div><figcaption><b>Friends ranking</b><span>Points, streaks, reps and a weekly league.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/6_progress.jpg" alt="Progress screen: day 11 of 30, streak 11, 509 reps, 42 minutes and a winding 30-day trail" width="414" height="900" loading="lazy"></div><figcaption><b>Your trail</b><span>Streaks, totals and a 30-day map of the challenge.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/5_invite.jpg" alt="Onboarding screen titled Got an invite code? that offers 20% off 150 Abs Plus with a friend's code" width="600" height="1304" loading="lazy"></div><figcaption><b>Invite a friend</b><span>Their code saves them 20% on Plus.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/7_plus.jpg" alt="150 Abs Plus screen: Go all in, with every program, streak protection, the full ranking and before and after photos" width="600" height="1304" loading="lazy"></div><figcaption><b>150 Abs Plus</b><span>Every program and the full social game.</span></figcaption></figure>
+    <div class="carousel" data-carousel>
+      <div class="gallery" tabindex="0" role="region" aria-label="App screens. Scroll sideways or use the arrows.">
+        <figure><div class="phone"><img src="img/1_today.jpg" alt="Today screen: Day 12 of 30, an 11-day streak and today's mission of 78 reps across 5 exercises, about 6 minutes" width="600" height="1304" loading="lazy"></div><figcaption><b>Today's mission</b><span>Your reps, your exercises, one Start button.</span></figcaption></figure>
+        <figure><div class="phone"><img src="img/2_workout.jpg" alt="Guided workout: Bicycle Crunch with a 26-rep counter ring and a Done button" width="600" height="1304" loading="lazy"></div><figcaption><b>Guided workout</b><span>Animated moves, tap-to-count reps, rest timer.</span></figcaption></figure>
+        <figure><div class="phone"><img src="img/3_ranking.jpg" alt="Ranking: a podium with Marcus first, Jordan second and Maya third, and your place in this week's league" width="600" height="1304" loading="lazy"></div><figcaption><b>Friends ranking</b><span>A weekly league with a podium to fight for.</span></figcaption></figure>
+        <figure><div class="phone"><img src="img/4_crew.jpg" alt="Crew screen: Morning Crew with a 6-day shared streak and who trained today" width="600" height="1304" loading="lazy"></div><figcaption><b>Crews</b><span>Up to 6 friends sharing one streak.</span></figcaption></figure>
+        <figure><div class="phone"><img src="img/6_progress.jpg" alt="Progress screen: day 11 of 30, streak 11, 509 reps and a winding 30-day trail" width="600" height="1304" loading="lazy"></div><figcaption><b>Your trail</b><span>Streaks, totals and a 30-day map.</span></figcaption></figure>
+        <figure><div class="phone"><img src="img/8_programs.jpg" alt="Programs: Classic 150 plus Obliques, Lower Abs and Plank Mastery, at Beginner, Intermediate or Pro" width="600" height="1304" loading="lazy"></div><figcaption><b>Programs</b><span>Beginner to Pro, plus focus programs.</span></figcaption></figure>
+        <figure><div class="phone"><img src="img/9_shields.jpg" alt="Streak Shields: protect your streak on a busy day" width="600" height="1304" loading="lazy"></div><figcaption><b>Streak Shields</b><span>A busy day doesn't break the streak.</span></figcaption></figure>
+        <figure><div class="phone"><img src="img/5_invite.jpg" alt="Onboarding screen titled Got an invite code? that offers 20% off 150 Abs Plus with a friend's code" width="600" height="1304" loading="lazy"></div><figcaption><b>Invite a friend</b><span>Their code saves them 20% on Plus.</span></figcaption></figure>
+        <figure><div class="phone"><img src="img/7_plus.jpg" alt="150 Abs Plus screen: Go all in, with every program, streak protection, the full ranking and a 7-day free trial" width="600" height="1304" loading="lazy"></div><figcaption><b>150 Abs Plus</b><span>Every program and the full social game.</span></figcaption></figure>
+      </div>
+      <div class="car-controls wrap">
+        <button class="car-btn" type="button" data-dir="-1" aria-label="Previous screen"><svg class="ico" aria-hidden="true"><use href="#i-chev"/></svg></button>
+        <button class="car-btn" type="button" data-dir="1" aria-label="Next screen"><svg class="ico flip" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      </div>
     </div>
   </section>
 
